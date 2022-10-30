@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacto - Mundial de Proteinas</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="caja">
+        <h1><img src="mundialnegro1.jpg" alt="logo mundial de proteinas" /></h1>
+
+        <nav>
+          <ul>
+            <li><a href="principal.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="frm_contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <form>
+        <label for="nombreapellido">Nombre y Apellido</label>
+        <input type="text" id="nombreapellido" class="input-padron" required />
+
+        <label for="correoelectronico">Correo Electrónico</label>
+        <input
+          type="text"
+          id="correoelectronico"
+          class="input-padron"
+          required
+          placeholder="email@dominio.com"
+        />
+
+        <label for="telefono">Teléfono</label>
+        <input
+          type="text"
+          id="telefono"
+          class="input-padron"
+          required
+          placeholder="xxx-xxxxxxx"
+        />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          cols="68"
+          rows="10"
+          id="mensaje"
+          class="input-padron"
+          required
+        ></textarea>
+
+        <fieldset>
+          <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="contacto"
+              value="email"
+              id="radio-email"
+            />Email</label
+          >
+
+          <label for="telefono"
+            ><input
+              type="radio"
+              name="contacto"
+              value="telefono"
+              id="telefono"
+            />Teléfono</label
+          >
+
+          <label for="whatsapp"
+            ><input
+              type="radio"
+              name="contacto"
+              value="whatsapp"
+              id="whatsapp"
+              checked
+            />WhatsApp</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>¿En cuál horario prefiere ser atendido?</legend>
+          <select>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select>
+        </fieldset>
+
+        <label class="checkbox"
+          ><input type="checkbox" checked />Le gustaría recibir promociones de
+          Mundial de Proteinas?</label
+        >
+
+        <input
+          type="submit"
+          name="contacto"
+          value="Enviar Formulario"
+          class="enviar"
+        />
+      </form>
+    </main>
+
+    <footer>
+      <img src="mundialnegro1.jpg" alt="logo mundial de proteinas" />
+      <p class="copyright">&copy Mundial de Proteinas - 2022</p>
+      <p class="copyright">Diseñado por: Ederson Herrera Ardila</p>
+    </footer>
+  </body>
+</html>
